@@ -1,0 +1,72 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/* mq de desktop - a partir de 1024px */
+@media screen and (min-width:1024px){
+    
+    /* header - logo+menu */
+
+    header{
+        nav div ul{
+            gap: 3rem;
+            font-size: $fuente-estandar;
+        }
+        .logo{
+            height: 18vh;
+        }
+    }
+
+
+    /* imagenes index */
+    .imagen-index{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 60% 40%;
+        justify-content: center;
+        margin: $espaciado-estandar $espaciado-doble;
+    }
+    .imagen-index .img-cuatro{
+        display: block;
+    }
+    .imagen-index .img-uno{
+        grid-column: span 1;
+    }
+    .imagen-index .img-dos{
+        grid-column: span 2;
+    }
+    .imagen-index .img-cuatro{
+        grid-column: span 2;
+    }
+    .imagen-index .img-tres{
+        grid-column: span 1;
+    }
+    .imagen-index .img-cinco{
+        grid-column: span 2;
+    }
+    
+    /* seccion video */
+    .video-youtube iframe{
+        width: 1260px;
+        height: 630px;
+    }
+    /* seccion tour */
+    .tour-virtual{
+        iframe{
+            width: 70%;
+        }
+    }
+    
+    /* seccion contacto */
+    .contacto{
+        .formulario{
+            font-size: $fuente-estandar;
+            width: 40%;
+        }
+        h2{
+            font-size: $fuente-secundaria;
+        }
+        p{
+            font-size: $fuente-estandar;
+        }
+    }
+}

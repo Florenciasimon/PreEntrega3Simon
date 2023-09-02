@@ -1,0 +1,57 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/* mq de tablet - a partir de 600px */
+@media screen and (min-width:600px){
+    /* header - logo+menu */
+    header{
+        @include flex-row;
+        justify-content: space-between;
+        height: 16vh;
+        padding: 0 $espaciado-doble;
+        nav div ul{
+            font-size: $fuente-pequena;
+            gap: 0;
+        }
+        .logo{
+            height: 16vh;
+        }
+    }
+
+
+    /* imagenes index */
+    .imagen-index{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+    .imagen-index .img-uno{
+        display: block;
+        grid-column: span 2;
+    }
+    .imagen-index .img-cinco{
+        grid-column: span 2;
+    }
+
+    /* seccion fotografia */
+    .fotografia-dos{
+        @include flex-row;
+        gap: $espaciado-estandar;
+    }
+    .imagenes{
+        width: 30%;
+    }
+
+    /* seccion contacto */
+    .contacto{
+        .formulario{
+            font-size: $fuente-estandar;
+            width: 50%;
+            display: flex;
+            margin: $espaciado-estandar auto;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+}
