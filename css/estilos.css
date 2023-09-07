@@ -7,20 +7,22 @@
 html {
   font-size: 62.5%; }
 
-a {
-  text-decoration: none; }
+.parrafo-final-index, .index h3, .fotografia h3, .fotografia .fotografia-ventajas div, .video h3, .video .video-beneficios div, .tour-virtual h3, .tour-virtual .tour-beneficios div, .contacto h2, .contacto .formulario {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #205073;
+  border-radius: 5px; }
 
+/*estilos base mobile*/
 body {
-  font-family: 'Montserrat', sans-serif; }
-
-/*estilos mobile*/
-body {
-  background-color: #000b24;
+  font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(to bottom, #000b24, #091d33);
   color: whitesmoke; }
+  body a {
+    text-decoration: none;
+    color: #70a7cd; }
 
-/*estilos menu*/
 header {
-  background-color: #205073;
   height: 18hv;
   display: flex;
   flex-direction: column;
@@ -30,55 +32,84 @@ header {
   padding-bottom: 2rem; }
   header .navbar {
     padding: 0; }
+  header .navbar-nav {
+    align-items: center;
+    background-color: #000b24; }
   header .container-fluid {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #205073; }
+    background-color: #000b24; }
   header .logo {
     height: 14vh;
     padding: 2rem 0; }
 
-/*estilos enlaces*/
-a {
-  color: #000b24; }
-
-/*estilos textos*/
-h1 {
+main h1 {
   font-size: 18px;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
-  color: #205073;
-  padding: 2rem; }
+  color: #70a7cd;
+  padding: 2rem;
+  text-shadow: 2px 2px 5px #205073; }
 
-h2 {
+main h2 {
   font-size: 16px;
   font-weight: normal;
   text-align: center;
   padding-bottom: 2rem; }
 
-.subtitulos {
+main h3 {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
   padding: 2rem;
-  background-color: #205073; }
+  background-color: none; }
 
-.parrafos {
+main h4 {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center; }
+
+main .parrafos {
   font-size: 14px;
   font-weight: 300;
   text-align: justify;
   margin: 2rem 4rem; }
 
-/*footer*/
 footer {
   font-size: 14px;
   font-weight: normal;
   text-align: center;
-  background-color: #205073;
   padding: 2rem; }
+  footer .redes-sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem; }
+    footer .redes-sociales img {
+      height: 20px; }
+    footer .redes-sociales :hover {
+      height: 25px; }
+
+/*estilos mobile por cada html*/
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.parrafo-final-index, .index h3, .fotografia h3, .fotografia .fotografia-ventajas div, .video h3, .video .video-beneficios div, .tour-virtual h3, .tour-virtual .tour-beneficios div, .contacto h2, .contacto .formulario {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #205073;
+  border-radius: 5px; }
 
 /*estilos index*/
+/*imagenes*/
 .imagen-index {
   height: 60vh;
   display: grid;
@@ -87,19 +118,40 @@ footer {
   gap: 1rem;
   margin: 0 4rem;
   align-content: center; }
+  .imagen-index .img-dos, .imagen-index .img-tres, .imagen-index .img-cinco, .imagen-index .img-uno, .imagen-index .img-cuatro {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .imagen-index .img-uno, .imagen-index .img-cuatro {
+    display: none; }
 
-.img-dos, .img-tres, .img-cinco, .img-uno, .img-cuatro {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.imagen-index .img-uno, .img-cuatro {
-  display: none; }
-
+/*textos*/
 .section-index {
   text-align: justify;
   font-size: 14px;
-  margin: 4rem; }
+  margin: 0 4rem; }
+
+.parrafo-final-index {
+  padding: 2rem;
+  padding-bottom: 1rem; }
+
+.index h3 {
+  margin: 1rem 0; }
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.parrafo-final-index, .index h3, .fotografia h3, .fotografia .fotografia-ventajas div, .video h3, .video .video-beneficios div, .tour-virtual h3, .tour-virtual .tour-beneficios div, .contacto h2, .contacto .formulario {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #205073;
+  border-radius: 5px; }
 
 /*estilos seccion fotografia*/
 .fotografia-dos {
@@ -107,17 +159,99 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin: 2rem; }
+  margin: 0 4rem; }
+  .fotografia-dos .img-oculta {
+    display: none; }
 
 .imagenes {
   width: 100%; }
 
-/* estilos seccion video y seccion tour virtual */
-.video-youtube, .tour {
+/*textos*/
+.fotografia h3 {
+  margin: 2rem 4rem; }
+
+.fotografia .fotografia-ventajas div {
+  background-color: #205073;
+  margin: 2rem 4rem; }
+  .fotografia .fotografia-ventajas div h4 {
+    padding-top: 2rem; }
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.parrafo-final-index, .index h3, .fotografia h3, .fotografia .fotografia-ventajas div, .video h3, .video .video-beneficios div, .tour-virtual h3, .tour-virtual .tour-beneficios div, .contacto h2, .contacto .formulario {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #205073;
+  border-radius: 5px; }
+
+/* estilos seccion video */
+.video-youtube {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 2rem 4rem; }
+
+.video h3 {
+  margin: 0 4rem; }
+
+.video .video-beneficios div {
+  background-color: #205073;
+  margin: 2rem 4rem; }
+  .video .video-beneficios div h4 {
+    padding: 2rem 4rem 0 4rem; }
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.parrafo-final-index, .index h3, .fotografia h3, .fotografia .fotografia-ventajas div, .video h3, .video .video-beneficios div, .tour-virtual h3, .tour-virtual .tour-beneficios div, .contacto h2, .contacto .formulario {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #205073;
+  border-radius: 5px; }
+
+/* estilos seccion tour virtual */
+.tour {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem 4rem; }
+
+.tour-virtual h3 {
+  margin: 0 4rem; }
+
+.tour-virtual .tour-beneficios div {
+  background-color: #205073;
+  margin: 2rem 4rem; }
+  .tour-virtual .tour-beneficios div h4 {
+    padding: 2rem 4rem 0 4rem; }
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.parrafo-final-index, .index h3, .fotografia h3, .fotografia .fotografia-ventajas div, .video h3, .video .video-beneficios div, .tour-virtual h3, .tour-virtual .tour-beneficios div, .contacto h2, .contacto .formulario {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #205073;
+  border-radius: 5px; }
 
 /* estilos seccion contacto */
 .contacto h1 {
@@ -126,10 +260,16 @@ footer {
 
 .contacto h2 {
   font-size: 14px;
-  background-color: #205073;
-  padding: 2rem 4rem; }
+  padding: 2rem;
+  margin: 0 4rem; }
+
+.contacto .llamado {
+  text-align: center;
+  padding: 2rem; }
 
 .contacto .formulario {
+  padding: 2rem;
+  margin: 0 4rem;
   font-size: 14px;
   width: 80%;
   display: flex;
@@ -138,11 +278,18 @@ footer {
   justify-content: center;
   align-content: center; }
   .contacto .formulario button {
-    margin: 1rem 0;
+    margin-top: 1rem;
     padding: 0.3rem;
     background-color: #205073;
     color: white;
     border-radius: 5px; }
+
+/*estilos mq*/
+.parrafo-final-index, .index h3, .fotografia h3, .fotografia .fotografia-ventajas div, .video h3, .video .video-beneficios div, .tour-virtual h3, .tour-virtual .tour-beneficios div, .contacto h2, .contacto .formulario {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #205073;
+  border-radius: 5px; }
 
 /* mq de tablet - a partir de 600px */
 @media screen and (min-width: 600px) {
@@ -154,29 +301,76 @@ footer {
     justify-content: space-between;
     height: 16vh;
     padding: 0 4rem; }
-    header nav div ul {
+    header .menu div ul {
       font-size: 14px;
-      gap: 0; }
+      gap: 1rem; }
     header .logo {
-      height: 16vh; }
-  /* imagenes index */
-  .imagen-index {
+      height: 14vh; }
+  /* index */
+  .index .imagen-index {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 50%); }
-  .imagen-index .img-uno {
-    display: block;
-    grid-column: span 2; }
-  .imagen-index .img-cinco {
-    grid-column: span 2; }
-  /* seccion fotografia */
-  .fotografia-dos {
+    grid-template-rows: repeat(2, 50%);
+    padding: 1rem 0; }
+    .index .imagen-index .img-uno {
+      display: block;
+      grid-column: span 2; }
+    .index .imagen-index .img-cinco {
+      grid-column: span 2; }
+  .index .section-index h3, .index .section-index .parrafo-final-index {
+    margin: 2rem 0; }
+  /* fotografia */
+  .fotografia .fotografia-dos {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem; }
-  .imagenes {
-    width: 30%; }
-  /* seccion contacto */
+    .fotografia .fotografia-dos .img-oculta {
+      display: block; }
+    .fotografia .fotografia-dos .imagenes {
+      width: 30%; }
+  .fotografia .fotografia-ventajas article {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 2rem 4rem; }
+    .fotografia .fotografia-ventajas article div {
+      margin: 0; }
+      .fotografia .fotografia-ventajas article div h4 {
+        padding: 2rem; }
+      .fotografia .fotografia-ventajas article div p {
+        padding-top: 0;
+        margin-top: 0;
+        text-align: center; }
+  /* video*/
+  .video .video-beneficios article {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 2rem 4rem; }
+    .video .video-beneficios article div {
+      margin: 0; }
+      .video .video-beneficios article div h4 {
+        padding: 2rem; }
+      .video .video-beneficios article div p {
+        margin-top: 0;
+        text-align: center; }
+  /*tour virtual*/
+  .tour-virtual .tour-beneficios article {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 2rem 4rem; }
+    .tour-virtual .tour-beneficios article div {
+      margin: 0; }
+      .tour-virtual .tour-beneficios article div h4 {
+        padding: 2rem; }
+      .tour-virtual .tour-beneficios article div p {
+        margin-top: 0;
+        text-align: center; }
+  /* contacto */
   .contacto .formulario {
     font-size: 16px;
     width: 50%;
@@ -186,44 +380,129 @@ footer {
     justify-content: center;
     align-content: center; } }
 
+.parrafo-final-index, .index h3, .fotografia h3, .fotografia .fotografia-ventajas div, .video h3, .video .video-beneficios div, .tour-virtual h3, .tour-virtual .tour-beneficios div, .contacto h2, .contacto .formulario {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #205073;
+  border-radius: 5px; }
+
 /* mq de desktop - a partir de 1024px */
 @media screen and (min-width: 1024px) {
-  /* header - logo+menu */
-  header nav div ul {
-    gap: 3rem;
-    font-size: 16px; }
-  header .logo {
-    height: 18vh; }
-  /* imagenes index */
-  .imagen-index {
+  /* header */
+  header {
+    padding: 0 8rem; }
+    header .menu div ul {
+      font-size: 16px;
+      gap: 2rem; }
+      header .menu div ul li a:hover {
+        font-size: 18px; }
+    header .logo {
+      height: 16vh; }
+  /*estilos textos*/
+  main {
+    padding-left: 6rem;
+    padding-right: 6rem; }
+    main h1 {
+      font-size: 22px;
+      font-weight: bolder;
+      text-align: center;
+      color: #70a7cd;
+      padding: 2rem; }
+    main h2 {
+      font-size: 18px;
+      font-weight: normal;
+      text-align: center;
+      padding-bottom: 2rem; }
+    main h3 {
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      padding: 2rem; }
+    main h4 {
+      font-size: 18px;
+      font-weight: normal;
+      text-align: center; }
+    main .parrafos {
+      font-size: 16px;
+      font-weight: 300;
+      text-align: justify;
+      margin: 2rem 4rem; }
+    main .section-index {
+      font-size: 16px; }
+  /* index */
+  .index .imagen-index {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 60% 40%;
     justify-content: center;
+    gap: 1.5rem;
     margin: 2rem 4rem; }
-  .imagen-index .img-cuatro {
-    display: block; }
-  .imagen-index .img-uno {
-    grid-column: span 1; }
-  .imagen-index .img-dos {
-    grid-column: span 2; }
-  .imagen-index .img-cuatro {
-    grid-column: span 2; }
-  .imagen-index .img-tres {
-    grid-column: span 1; }
-  .imagen-index .img-cinco {
-    grid-column: span 2; }
-  /* seccion video */
-  .video-youtube iframe {
+    .index .imagen-index .img-uno {
+      grid-column: span 1; }
+    .index .imagen-index .img-dos, .index .imagen-index .img-cinco {
+      grid-column: span 2; }
+    .index .imagen-index .img-cuatro {
+      display: block;
+      grid-column: span 2; }
+    .index .imagen-index .img-tres {
+      grid-column: span 1; }
+  .index .section-index .p-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    padding: 2rem; }
+    .index .section-index .p-index p {
+      text-align: center; }
+  .index .parrafo-final-index {
+    text-align: center; }
+  /*fotografia*/
+  .fotografia .fotografia-ventajas article {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    margin: 2rem 4rem; }
+  .fotografia .fotografia-ventajas .parrafos {
+    text-align: center;
+    margin: 0 1rem 1rem 1rem; }
+  /* video */
+  .video .video-youtube iframe {
     width: 1260px;
     height: 630px; }
-  /* seccion tour */
+  .video .video-beneficios article {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    margin: 2rem 4rem; }
+  .video .video-beneficios .parrafos {
+    text-align: center;
+    margin: 0 1rem 1rem 1rem; }
+  /* tour */
   .tour-virtual iframe {
     width: 70%; }
-  /* seccion contacto */
-  .contacto .formulario {
-    font-size: 16px;
-    width: 40%; }
-  .contacto h2 {
-    font-size: 18px; }
-  .contacto p {
-    font-size: 16px; } }
+  .tour-virtual .tour-beneficios article {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    margin: 2rem 4rem; }
+  .tour-virtual .tour-beneficios .parrafos {
+    text-align: center;
+    margin: 0 1rem 1rem 1rem; }
+  /* contacto */
+  .contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 15% 10% 75%; }
+    .contacto h1 {
+      grid-column: span 2; }
+    .contacto h2 {
+      grid-column: span 2;
+      font-size: 18px; }
+    .contacto .formulario {
+      font-size: 16px;
+      width: 95%;
+      background-color: #205073;
+      margin-right: 8rem; }
+      .contacto .formulario button {
+        background-color: #000b24; }
+    .contacto .parrafos {
+      align-self: center;
+      justify-self: center;
+      padding: 0 4rem; }
+      .contacto .parrafos p {
+        font-size: 16px; } }

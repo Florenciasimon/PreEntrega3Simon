@@ -1,0 +1,39 @@
+@import "../utilidades/reset";
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/*estilos seccion fotografia*/
+
+.fotografia-dos{
+    @include flex-column;
+    gap: 1rem;
+    margin: 0 $espaciado-doble;
+    .img-oculta{
+        display: none;
+    }
+}
+
+.imagenes{
+    width: 100%;
+}
+
+/*textos*/
+
+.fotografia{
+    h3{
+        @extend %estilos-border;
+        margin: $espaciado-estandar $espaciado-doble;
+    }
+    .fotografia-ventajas{
+        div{
+            @extend %estilos-border;
+            background-color: $color-secundario;
+            margin: $espaciado-estandar $espaciado-doble;
+            h4{
+                padding-top: $espaciado-estandar;
+            }
+        }
+    }
+}
+

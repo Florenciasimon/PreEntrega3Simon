@@ -1,0 +1,42 @@
+@import "../utilidades/reset";
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/* estilos seccion contacto */
+
+.contacto{
+    h1{
+        padding: $espaciado-doble;
+        color: white;
+    }
+    h2{
+        font-size: $fuente-pequena;
+        @extend %estilos-border;
+        padding: $espaciado-estandar;
+        margin: 0   $espaciado-doble;
+    }
+    .llamado{
+        text-align: center;
+        padding: $espaciado-estandar;
+    }
+    .formulario{
+        @extend %estilos-border;
+        padding: $espaciado-estandar;
+        margin: 0 $espaciado-doble;
+        font-size:$fuente-pequena;
+        width: 80%;
+        display: flex;
+        margin: $espaciado-estandar auto;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        button{
+            margin-top: 1rem;
+            padding: 0.3rem;
+            background-color: $color-secundario;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+}

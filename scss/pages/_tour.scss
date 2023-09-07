@@ -1,0 +1,28 @@
+@import "../utilidades/reset";
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/* estilos seccion tour virtual */
+
+.tour{
+    @include flex-row;
+    margin: $espaciado-estandar $espaciado-doble;
+}
+
+.tour-virtual{
+    h3{
+        @extend %estilos-border;
+        margin: 0 $espaciado-doble;
+    }
+    .tour-beneficios{
+        div{
+            @extend %estilos-border;
+            background-color: $color-secundario;
+            margin: $espaciado-estandar $espaciado-doble;
+            h4{
+                padding: $espaciado-estandar $espaciado-doble 0 $espaciado-doble;
+            }
+        }
+    }
+}

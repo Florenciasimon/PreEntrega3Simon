@@ -1,0 +1,11 @@
+@import "../utilidades/variables";
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to bottom, $color-principal, $color-fondo);
+    color: $color-texto;
+    a{
+        text-decoration: none;
+        color: $color-texto-destaque;
+    }
+}

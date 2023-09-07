@@ -1,0 +1,43 @@
+@import "../utilidades/reset";
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/*estilos index*/
+
+/*imagenes*/
+.imagen-index{
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,30%);
+    gap: 1rem;
+    margin: 0 $espaciado-doble;
+    align-content: center;
+    .img-dos, .img-tres, .img-cinco, .img-uno, .img-cuatro{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .img-uno, .img-cuatro{
+        display: none;
+    }
+}
+
+/*textos*/
+.section-index{
+    text-align: justify;
+    font-size: $fuente-pequena;
+    margin: 0 $espaciado-doble;
+}
+
+.parrafo-final-index{
+    @extend %estilos-border;
+    padding: $espaciado-estandar;
+    padding-bottom: 1rem;
+}
+
+.index h3{
+    @extend %estilos-border;
+    margin: 1rem 0;
+}

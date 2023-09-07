@@ -4,45 +4,127 @@
 
 /* mq de tablet - a partir de 600px */
 @media screen and (min-width:600px){
+    
     /* header - logo+menu */
     header{
         @include flex-row;
         justify-content: space-between;
         height: 16vh;
         padding: 0 $espaciado-doble;
-        nav div ul{
-            font-size: $fuente-pequena;
-            gap: 0;
+        .menu{
+            div{
+                ul{
+                    font-size: $fuente-pequena;
+                    gap: 1rem;
+                }
+            }
         }
         .logo{
-            height: 16vh;
+            height: 14vh;
         }
     }
 
-
-    /* imagenes index */
-    .imagen-index{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 50%);
-    }
-    .imagen-index .img-uno{
-        display: block;
-        grid-column: span 2;
-    }
-    .imagen-index .img-cinco{
-        grid-column: span 2;
-    }
-
-    /* seccion fotografia */
-    .fotografia-dos{
-        @include flex-row;
-        gap: $espaciado-estandar;
-    }
-    .imagenes{
-        width: 30%;
+    /* index */
+    .index{
+        .imagen-index{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 50%);
+            padding: 1rem 0;
+            .img-uno{
+                display: block;
+                grid-column: span 2;
+            }
+            .img-cinco{
+                grid-column: span 2;
+            }
+        }
+        .section-index{
+            h3, .parrafo-final-index{
+                margin: $espaciado-estandar 0;
+            }
+        }
     }
 
-    /* seccion contacto */
+    /* fotografia */
+    .fotografia{
+        .fotografia-dos{
+            @include flex-row;
+            gap: $espaciado-estandar;
+            .img-oculta{
+                display: block;
+            }
+            .imagenes{
+                width: 30%;
+            }
+        }
+        .fotografia-ventajas{
+            article{
+                gap:$espaciado-estandar;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                margin: $espaciado-estandar $espaciado-doble;
+                div{
+                    margin: 0;
+                    h4{
+                        padding: $espaciado-estandar;
+                    }
+                    p{
+                        padding-top: 0;
+                        margin-top: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    /* video*/
+    .video{
+        .video-beneficios{
+            article{
+                gap:$espaciado-estandar;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                margin: $espaciado-estandar $espaciado-doble;
+                div{
+                    margin: 0;
+                    h4{
+                        padding: $espaciado-estandar;
+                    }
+                    p{
+                        margin-top: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    /*tour virtual*/
+    .tour-virtual{
+        .tour-beneficios{
+            article{
+                gap:$espaciado-estandar;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                margin: $espaciado-estandar $espaciado-doble;
+                div{
+                    margin: 0;
+                    h4{
+                        padding: $espaciado-estandar;
+                    }
+                    p{
+                        margin-top: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    /* contacto */
     .contacto{
         .formulario{
             font-size: $fuente-estandar;

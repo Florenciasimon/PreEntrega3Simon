@@ -1,0 +1,27 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+main{
+    h1{
+        @include textos-estilos-base($fuente-secundaria,bold,center);
+        color: $color-texto-destaque;
+        padding: $espaciado-estandar;
+        text-shadow: 2px 2px 5px $color-secundario;
+    }
+    h2{
+        @include textos-estilos-base($fuente-estandar,normal,center);
+        padding-bottom: $espaciado-estandar;
+    }
+    h3{
+        @include textos-estilos-base($fuente-estandar,400,center);
+        padding: $espaciado-estandar;
+        background-color: none;
+    }
+    h4{
+        @include textos-estilos-base($fuente-estandar,normal,center);
+    }
+    .parrafos{
+        @include textos-estilos-base($fuente-pequena,300,justify);
+        margin:$espaciado-estandar $espaciado-doble;
+    }
+}

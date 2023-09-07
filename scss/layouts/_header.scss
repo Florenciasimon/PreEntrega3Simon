@@ -1,0 +1,25 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+header{
+    height: 18hv;
+    @include flex-column;
+    font-size: $fuente-pequena;
+    font-weight: bolder;
+    padding-bottom: $espaciado-estandar;
+    .navbar{
+        padding: 0;
+    }
+    .navbar-nav{
+        align-items: center;
+        background-color: $color-principal;
+    }
+    .container-fluid{
+        @include flex-row;
+        background-color: $color-principal;
+    }
+    .logo{
+        height: 14vh;
+        padding: $espaciado-estandar 0;
+    }
+}

@@ -1,0 +1,18 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+footer{
+    @include textos-estilos-base($fuente-pequena,normal,center);
+    padding: $espaciado-estandar;
+    .redes-sociales{
+        @include flex-row;
+        gap: $espaciado-estandar;
+        margin-bottom: $espaciado-estandar;
+        img{
+            height: 20px;
+        }
+        :hover{
+            height: 25px;
+        }
+    }
+}

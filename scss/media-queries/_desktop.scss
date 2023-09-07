@@ -4,69 +4,175 @@
 
 /* mq de desktop - a partir de 1024px */
 @media screen and (min-width:1024px){
-    
-    /* header - logo+menu */
 
+    /* header */
     header{
-        nav div ul{
-            gap: 3rem;
-            font-size: $fuente-estandar;
+        padding: 0 8rem;
+        .menu{
+            div{
+                ul{
+                    font-size: $fuente-estandar;
+                    gap: $espaciado-estandar;
+                    li{
+                        a:hover{
+                            font-size: $fuente-secundaria;
+                        }
+                    }
+                }
+            }
         }
         .logo{
-            height: 18vh;
+            height: 16vh;
         }
     }
 
+    /*estilos textos*/
+    main{
+        padding-left: 6rem;
+        padding-right: 6rem;
+        h1{
+            @include textos-estilos-base(22px,bolder,center);
+            color: $color-texto-destaque;
+            padding: $espaciado-estandar;
+        }
+        h2{
+            @include textos-estilos-base($fuente-secundaria,normal,center);
+            padding-bottom: $espaciado-estandar;
+        }
+        h3{
+            @include textos-estilos-base($fuente-secundaria,400,center);
+            padding: $espaciado-estandar;
+        }
+        h4{
+            @include textos-estilos-base($fuente-secundaria,normal,center);
+        }
+        .parrafos{
+            @include textos-estilos-base($fuente-estandar,300,justify);
+            margin:$espaciado-estandar $espaciado-doble;
+        }
+        .section-index{
+            font-size: $fuente-estandar;
+        }
+    }
 
-    /* imagenes index */
-    .imagen-index{
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 60% 40%;
-        justify-content: center;
-        margin: $espaciado-estandar $espaciado-doble;
+    /* index */
+    .index{
+        .imagen-index{
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 60% 40%;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: $espaciado-estandar $espaciado-doble;
+            .img-uno{
+                grid-column: span 1;
+            }
+            .img-dos, .img-cinco{
+                grid-column: span 2;
+            }
+            .img-cuatro{
+                display: block;
+                grid-column: span 2;
+            }
+            .img-tres{
+                grid-column: span 1;
+            }
+        }
+        .section-index{
+            .p-index{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: $espaciado-doble;
+                padding: $espaciado-estandar;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+        .parrafo-final-index{
+            text-align: center;
+        }
     }
-    .imagen-index .img-cuatro{
-        display: block;
+
+    /*fotografia*/
+    .fotografia{
+        .fotografia-ventajas{
+            article{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+                margin: $espaciado-estandar $espaciado-doble;
+            }
+            .parrafos{
+                text-align: center;
+                margin: 0 1rem 1rem 1rem;
+            }
+        }
     }
-    .imagen-index .img-uno{
-        grid-column: span 1;
+
+    /* video */
+    .video{
+        .video-youtube iframe{
+            width: 1260px;
+            height: 630px;
+        }
+        .video-beneficios{
+            article{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+                margin: $espaciado-estandar $espaciado-doble;
+            }
+            .parrafos{
+                text-align: center;
+                margin: 0 1rem 1rem 1rem;
+            }
+        }
     }
-    .imagen-index .img-dos{
-        grid-column: span 2;
-    }
-    .imagen-index .img-cuatro{
-        grid-column: span 2;
-    }
-    .imagen-index .img-tres{
-        grid-column: span 1;
-    }
-    .imagen-index .img-cinco{
-        grid-column: span 2;
-    }
-    
-    /* seccion video */
-    .video-youtube iframe{
-        width: 1260px;
-        height: 630px;
-    }
-    /* seccion tour */
+
+    /* tour */
     .tour-virtual{
         iframe{
             width: 70%;
         }
+        .tour-beneficios{
+            article{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+                margin: $espaciado-estandar $espaciado-doble;
+            }
+            .parrafos{
+                text-align: center;
+                margin: 0 1rem 1rem 1rem;
+            }
+        }
     }
-    
-    /* seccion contacto */
+
+    /* contacto */
     .contacto{
-        .formulario{
-            font-size: $fuente-estandar;
-            width: 40%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 15% 10% 75%;
+        h1{
+            grid-column: span 2;
         }
         h2{
+            grid-column: span 2;
             font-size: $fuente-secundaria;
         }
-        p{
+        .formulario{
             font-size: $fuente-estandar;
+            width: 95%;
+            background-color: $color-secundario;
+            margin-right: 8rem;
+            button{
+                background-color: $color-principal;
+            }
+        }
+        .parrafos{
+            align-self: center;
+            justify-self: center;
+            padding: 0 $espaciado-doble;
+            p{
+                font-size: $fuente-estandar;
+            }    
         }
     }
 }
