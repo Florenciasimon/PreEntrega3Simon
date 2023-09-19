@@ -22,7 +22,7 @@
             }
         }
         .logo{
-            height: 16vh;
+            height: 18vh;
         }
     }
 
@@ -104,6 +104,13 @@
             .parrafos{
                 text-align: center;
                 margin: 0 1rem 1rem 1rem;
+            }
+        }
+        #carouselExampleFade, #carouselExampleFadeDos{
+            margin: 0 10rem;
+            .carousel-control-next-icon, .carousel-control-prev-icon{
+                border-radius: 20px;
+                padding: 20px;
             }
         }
     }

@@ -5,19 +5,6 @@
 
 /*estilos seccion fotografia*/
 
-.fotografia-dos{
-    @include flex-column;
-    gap: 1rem;
-    margin: 0 $espaciado-doble;
-    .img-oculta{
-        display: none;
-    }
-}
-
-.imagenes{
-    width: 100%;
-}
-
 /*textos*/
 
 .fotografia{
@@ -33,6 +20,17 @@
             h4{
                 padding-top: $espaciado-estandar;
             }
+        }
+    }
+    #carouselExampleFade, #carouselExampleFadeDos{
+        padding: $espaciado-estandar $espaciado-doble;
+        .carousel-control-prev, .carousel-control-next{
+            margin: $espaciado-estandar;
+        }
+        .carousel-control-next-icon, .carousel-control-prev-icon{
+            background-color: $color-principal;
+            border-radius: 10px;
+            padding: 10px;
         }
     }
 }

@@ -22,27 +22,19 @@ body {
     text-decoration: none;
     color: #70a7cd; }
 
-header {
+header nav .container-fluid {
   height: 18hv;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-size: 14px;
   font-weight: bolder;
-  padding-bottom: 2rem; }
-  header .navbar {
-    padding: 0; }
-  header .navbar-nav {
-    align-items: center;
-    background-color: #000b24; }
-  header .container-fluid {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #000b24; }
-  header .logo {
+  padding: 2rem 4rem 0 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  header nav .container-fluid .logo {
     height: 14vh;
     padding: 2rem 0; }
+  header nav .container-fluid ul li {
+    text-align: right; }
 
 main h1 {
   font-size: 18px;
@@ -80,7 +72,7 @@ footer {
   font-size: 14px;
   font-weight: normal;
   text-align: center;
-  padding: 2rem; }
+  padding: 4rem 2rem 2rem 2rem; }
   footer .redes-sociales {
     display: flex;
     flex-direction: row;
@@ -154,18 +146,6 @@ html {
   border-radius: 5px; }
 
 /*estilos seccion fotografia*/
-.fotografia-dos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin: 0 4rem; }
-  .fotografia-dos .img-oculta {
-    display: none; }
-
-.imagenes {
-  width: 100%; }
-
 /*textos*/
 .fotografia h3 {
   margin: 2rem 4rem; }
@@ -175,6 +155,15 @@ html {
   margin: 2rem 4rem; }
   .fotografia .fotografia-ventajas div h4 {
     padding-top: 2rem; }
+
+.fotografia #carouselExampleFade, .fotografia #carouselExampleFadeDos {
+  padding: 2rem 4rem; }
+  .fotografia #carouselExampleFade .carousel-control-prev, .fotografia #carouselExampleFade .carousel-control-next, .fotografia #carouselExampleFadeDos .carousel-control-prev, .fotografia #carouselExampleFadeDos .carousel-control-next {
+    margin: 2rem; }
+  .fotografia #carouselExampleFade .carousel-control-next-icon, .fotografia #carouselExampleFade .carousel-control-prev-icon, .fotografia #carouselExampleFadeDos .carousel-control-next-icon, .fotografia #carouselExampleFadeDos .carousel-control-prev-icon {
+    background-color: #000b24;
+    border-radius: 10px;
+    padding: 10px; }
 
 /*reset*/
 * {
@@ -293,19 +282,6 @@ html {
 
 /* mq de tablet - a partir de 600px */
 @media screen and (min-width: 600px) {
-  /* header - logo+menu */
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-between;
-    height: 16vh;
-    padding: 0 4rem; }
-    header .menu div ul {
-      font-size: 14px;
-      gap: 1rem; }
-    header .logo {
-      height: 14vh; }
   /* index */
   .index .imagen-index {
     grid-template-columns: repeat(3, 1fr);
@@ -319,15 +295,6 @@ html {
   .index .section-index h3, .index .section-index .parrafo-final-index {
     margin: 2rem 0; }
   /* fotografia */
-  .fotografia .fotografia-dos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem; }
-    .fotografia .fotografia-dos .img-oculta {
-      display: block; }
-    .fotografia .fotografia-dos .imagenes {
-      width: 30%; }
   .fotografia .fotografia-ventajas article {
     gap: 2rem;
     display: grid;
@@ -342,6 +309,9 @@ html {
         padding-top: 0;
         margin-top: 0;
         text-align: center; }
+  .fotografia #carouselExampleFade .carousel-control-next-icon, .fotografia #carouselExampleFade .carousel-control-prev-icon, .fotografia #carouselExampleFadeDos .carousel-control-next-icon, .fotografia #carouselExampleFadeDos .carousel-control-prev-icon {
+    border-radius: 15px;
+    padding: 15px; }
   /* video*/
   .video .video-beneficios article {
     gap: 2rem;
@@ -380,6 +350,11 @@ html {
     justify-content: center;
     align-content: center; } }
 
+/* mq de menu - a partir de 768px (breakpoint de bt para menu hamburguesa)*/
+@media screen and (min-width: 768px) {
+  header .menu div ul {
+    gap: 1rem; } }
+
 .parrafo-final-index, .index h3, .fotografia h3, .fotografia .fotografia-ventajas div, .video h3, .video .video-beneficios div, .tour-virtual h3, .tour-virtual .tour-beneficios div, .contacto h2, .contacto .formulario {
   border-style: solid;
   border-width: 3px;
@@ -397,7 +372,7 @@ html {
       header .menu div ul li a:hover {
         font-size: 18px; }
     header .logo {
-      height: 16vh; }
+      height: 18vh; }
   /*estilos textos*/
   main {
     padding-left: 6rem;
@@ -462,6 +437,11 @@ html {
   .fotografia .fotografia-ventajas .parrafos {
     text-align: center;
     margin: 0 1rem 1rem 1rem; }
+  .fotografia #carouselExampleFade, .fotografia #carouselExampleFadeDos {
+    margin: 0 10rem; }
+    .fotografia #carouselExampleFade .carousel-control-next-icon, .fotografia #carouselExampleFade .carousel-control-prev-icon, .fotografia #carouselExampleFadeDos .carousel-control-next-icon, .fotografia #carouselExampleFadeDos .carousel-control-prev-icon {
+      border-radius: 20px;
+      padding: 20px; }
   /* video */
   .video .video-youtube iframe {
     width: 1260px;

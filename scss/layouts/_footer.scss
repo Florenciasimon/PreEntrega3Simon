@@ -3,7 +3,7 @@
 
 footer{
     @include textos-estilos-base($fuente-pequena,normal,center);
-    padding: $espaciado-estandar;
+    padding: $espaciado-doble $espaciado-estandar $espaciado-estandar $espaciado-estandar;
     .redes-sociales{
         @include flex-row;
         gap: $espaciado-estandar;

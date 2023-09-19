@@ -28,16 +28,15 @@
 
 <body>
     <header>
-        <a href="../index.html"><img src="../multimedia/logo.png" alt="logo meraki" class="logo animate__animated animate__rotateIn"></a>
-        
         <!-- nav de bootstrap -->
-        <nav class="navbar bg-dark border-body navbar-expand-md menu" data-bs-theme="dark">
+        <nav class="navbar navbar-dark border-body navbar-expand-md menu" data-bs-theme="dark">
             <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <a href="index.html"><img src="../multimedia/logo.png" alt="logo meraki" class="navbar-brand logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a href="../index.html">INICIO</a>
                         </li>
@@ -58,28 +57,60 @@
     </header>
 
     <main class="fotografia">
-        <h1>FOTOGRAFIA INMOBILIARIA</h1>
+        <h1 class="animate__animated animate__bounceInDown">FOTOGRAFIA INMOBILIARIA</h1>
         <h2>Capturando inmuebles en alta calidad</h2>
 
         <p class="parrafos">En la era digital, donde la primera impresión cuenta más que nunca, la fotografía profesional de inmuebles se ha convertido en un activo esencial para las agencias inmobiliarias que desean sobresalir en un mercado altamente competitivo. En Meraki Producciones, entendemos el papel fundamental que desempeñan las imágenes en el mundo inmobiliario y cómo su evolución ha marcado la diferencia.</p>
         
-        <div class="fotografia-dos">
-            <img src="../multimedia/fotografia-uno.jpg" alt="ambiente cocina casa en venta" class="imagenes">
-            <img src="../multimedia/fotografia-dos.jpg" alt="cocina comedor con isla" class="imagenes img-oculta">
-            <img src="../multimedia/fotografia-tres.jpg" alt="ambiente living comedor" class="imagenes">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade fotografia-dos">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../multimedia/fotografia-uno.jpg" class="d-block w-100" alt="imagen de la cocina de una casa en venta">
+                </div>
+                <div class="carousel-item">
+                    <img src="../multimedia/fotografia-dos.jpg" class="d-block w-100" alt="imagen de una cocina comedor con isla de una propiedad en venta">
+                </div>
+                <div class="carousel-item">
+                    <img src="../multimedia/fotografia-tres.jpg" class="d-block w-100" alt="imagen de living comedor">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        
+
         <section>
             <h3 class="subtitulos">La Importancia de la Fotografía Profesional</h3>
             <p class="parrafos">En el pasado, las imágenes de baja calidad eran comunes en los anuncios de propiedades en venta, pero hoy en día, la mayoría de los compradores potenciales inician su búsqueda en línea. Aquí es donde la fotografía profesional marca la diferencia. Las imágenes atractivas y bien compuestas captan la atención desde el primer instante, aumentando las posibilidades de que los compradores se sientan atraídos por una propiedad en particular.</p>
         </section>
-        
-        <div class="fotografia-dos">
-            <img src="../multimedia/fotografia-cuatro.jpg" alt="cocina comedor integrada" class="imagenes img-oculta">
-            <img src="../multimedia/fotografia-cinco.jpg" alt="sala de estar" class="imagenes">
-            <img src="../multimedia/fotografia-seis.jpg" alt="living comedor con cocina integrada" class="imagenes">
+
+        <div id="carouselExampleFadeDos" class="carousel slide carousel-fade fotografia-dos">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../multimedia/fotografia-cuatro.jpg" class="d-block w-100" alt="imagen de una cocina comedor integrada de una propiedad en venta">
+                </div>
+                <div class="carousel-item">
+                    <img src="../multimedia/fotografia-cinco.jpg" class="d-block w-100" alt="imagen de una sala de estar">
+                </div>
+                <div class="carousel-item">
+                    <img src="../multimedia/fotografia-seis.jpg" class="d-block w-100" alt="imagen de living comedor con cocina integrada">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadeDos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFadeDos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        
+
         <section class="fotografia-ventajas">
             <h3 class="subtitulos">Ventajas para las Inmobiliarias</h3> 
             <article>
